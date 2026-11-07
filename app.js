@@ -58,3 +58,28 @@ $("run").addEventListener("click", async()=>{
 });
 $("clear").addEventListener("click",()=>{input.value="";output.textContent="Your result will appear here.";status.textContent="";copy.disabled=true;});
 copy.addEventListener("click",async()=>{await navigator.clipboard.writeText(output.textContent);status.textContent="Copied to clipboard.";});
+// DevKit theme switcher
+const themeToggle = document.getElementById("theme-toggle");
+
+if (themeToggle) {
+  const savedTheme = localStorage.getItem("devkit-theme") || "dark";
+  document.documentElement.dataset.theme = savedTheme;
+
+  function updateThemeButton() {
+    themeToggle.textContent =
+      document.documentElement.dataset.theme === "dark"
+        ? "☀️ Mode clair"
+        : "🌙 Mode sombre";
+  }
+
+  updateThemeButton();
+
+  themeToggle.addEventListener("click", () => {
+    const currentTheme = document.documentElement.dataset.theme;
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+    document.documentElement.dataset.theme = newTheme;
+    localStorage.setItem("devkit-theme", newTheme);
+    updateThemeButton();
+  });
+}
