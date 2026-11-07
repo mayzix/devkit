@@ -1,5 +1,5 @@
 # DevKit
-
+![DevKit Tests](https://github.com/mayzix/devkit/actions/workflows/tests.yml/badge.svg)
 A small collection of browser-based utilities for everyday developer tasks.
 
 **Live demo:** coming soon  
