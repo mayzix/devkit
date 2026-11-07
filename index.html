@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free, private, browser-based utilities for developers.">
+  <title>DevKit — Developer utilities</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="DevKit home"><span class="brand-mark">D</span> DevKit</a>
+    <span class="privacy"><span class="dot"></span> Runs locally in your browser</span>
+    <a class="github-link" href="https://github.com/mayzix/devkit" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">A SMALL TOOLBOX FOR BUILDERS</p>
+      <h1>Less busywork.<br><span>More building.</span></h1>
+      <p class="intro">Simple, fast utilities for everyday development tasks. Your input stays in your browser.</p>
+    </section>
+    <nav class="tabs" aria-label="Developer tools">
+      <button class="tab active" data-tool="json">JSON</button>
+      <button class="tab" data-tool="base64">Base64</button>
+      <button class="tab" data-tool="uuid">UUID</button>
+      <button class="tab" data-tool="jwt">JWT</button>
+      <button class="tab" data-tool="url">URL</button>
+      <button class="tab" data-tool="hash">SHA-256</button>
+    </nav>
+    <section class="panel">
+      <div class="panel-heading">
+        <div><p class="eyebrow" id="tool-kicker">FORMAT & VALIDATE</p><h2 id="tool-title">JSON Formatter</h2></div>
+        <span class="local-tag">LOCAL ONLY</span>
+      </div>
+      <label for="input" id="input-label">Input JSON</label>
+      <textarea id="input" spellcheck="false" placeholder='{"hello":"world","count":3}'></textarea>
+      <div class="actions" id="actions">
+        <button class="primary" id="run">Format JSON</button>
+        <button class="secondary" id="clear">Clear</button>
+      </div>
+      <div class="output-heading"><label for="output">Output</label><button class="copy" id="copy" disabled>Copy output</button></div>
+      <pre id="output" class="output" aria-live="polite">Your result will appear here.</pre>
+      <p id="status" class="status" role="status"></p>
+    </section>
+    <section class="note"><strong>Privacy by design.</strong> DevKit processes data on your device. It does not send your input to a server.</section>
+  </main>
+  <footer>Built for the developer community · MIT License · <a href="https://github.com/mayzix/devkit">Contribute on GitHub</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
