@@ -1,20 +1,37 @@
-# Contributing to DevKit
+# Contributor Covenant Code of Conduct
 
-Thanks for considering a contribution!
+## Our Pledge
 
-## Getting started
+We are committed to making participation in DevKit a welcoming and respectful experience for everyone, regardless of age, background, experience, identity, or level of expertise.
 
-1. Open an issue describing the bug or proposed improvement.
-2. Fork the repository and create a focused branch.
-3. Keep changes small and explain the reason for the change.
-4. Test the affected tool in a modern browser.
-5. Open a pull request and include steps to reproduce or verify the change.
+## Our Standards
 
-## Guidelines
+Examples of positive behavior include:
 
-- Do not add analytics, tracking, or remote processing without discussion and explicit documentation.
-- Do not include real credentials, tokens, or personal data in examples.
-- Keep the interface accessible and usable on mobile.
-- Prefer browser-native APIs and avoid dependencies unless they provide clear value.
+- Being respectful and considerate.
+- Giving and receiving constructive feedback.
+- Focusing on what is best for the community.
+- Showing empathy toward other contributors.
 
-By contributing, you agree that your contributions are provided under the repository's MIT license.
+Unacceptable behavior includes:
+
+- Harassment, insults, or discriminatory language.
+- Trolling or personal attacks.
+- Publishing someone's private information without permission.
+- Any conduct that creates an intimidating or hostile environment.
+
+## Enforcement
+
+Project maintainers are responsible for clarifying and enforcing these standards. Inappropriate behavior may result in removal of comments, rejection of contributions, or exclusion from the project.
+
+## Scope
+
+This Code of Conduct applies to all project spaces, including issues, pull requests, discussions, and other community interactions.
+
+## Reporting
+
+To report unacceptable behavior, contact the project maintainer through the GitHub repository.
+
+## Attribution
+
+This Code of Conduct is inspired by the Contributor Covenant.
